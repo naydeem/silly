@@ -12,7 +12,7 @@ $(document).ready(function() {
 
     const homeButton = $('<button>', {
         id: 'homeButton',
-        class: 'home-button',
+        class: 'home-button h_button',
         text: 'Hem'
     });
 

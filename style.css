@@ -46,15 +46,22 @@ main{
 .discover-button {
     padding: 10px 20px;
     border: none;
-    background-color: #483d8b;
+    /*background-color: #483d8b;*/
+    background-image: linear-gradient(to left, #ff5252, #ff9260);
     color: #ffffff;
     border-radius: 5px;
     cursor: pointer;
     border-radius: 25px;
     margin-left: 10px;
-    transition: background-color 0.2s ease;
-    
-   
+    transition-duration: 0.2s;
+}
+.list-button:hover,
+.saved-button:hover,
+.search-button:hover,
+.search.button:hover,
+.home-button:hover,
+.discover-button:hover{
+    scale: 1.05;
 }
 
 .centered-text {
@@ -64,13 +71,15 @@ main{
     font-size: 48px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #7623c4;
+    /*color: #7623c4;*/
+    color: #f0f0f0;
     transform: translate(-50%, -50%);
     text-shadow: 4px 4px 4px rgba(4, 4, 3, 8.6); 
 }
 
 #UI {
-    background-color: #252551;;
+    /*background-color: #252551;*/
+    background-image: linear-gradient(#202020, #1a1a1a);
     color: #fff;
     padding: 20px;
     position: relative;
@@ -105,9 +114,10 @@ main{
 }
 
 #intro h1 {
-    font-size: 32px;
-    color: #511c97;
-    margin-bottom: 10px;
+  font-size: 32px;
+  background: -webkit-linear-gradient(#ff5252, #ff9260);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #intro p {
@@ -118,18 +128,18 @@ main{
 
 .start-button {
     padding: 10px 20px;
-    background-color: #483d8b;
+    background-image: linear-gradient(to left, #ff5252, #ff9260);
     color: #ffffff;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     font-size: 16px;
     margin-top: 20px;
-    transition: background-color 0.3s ease;
+    transition-duration: 0.3s;
 }
 
 .start-button:hover {
-    background-color: #6a5acd; 
+    filter: brightness(1.2); 
 }
 
 

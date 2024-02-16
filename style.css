@@ -1,8 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap);
 
-:root{
 
-}
 
 body{
     font-family: 'Inter', sans-serif;
@@ -24,7 +22,10 @@ main{
 }
 
 #contSlide{
-    grid-area: slider;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
 }
 
 #intro{
@@ -36,6 +37,58 @@ main{
 }
 
 /* Nadim CSS */
+
+#window{
+    grid-area: slider;
+    display: flex;
+    overflow: hidden;
+    height: 300px;
+    width: 500px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+#window>div{
+    display: flex;
+}
+
+#window>div>div{
+    position: relative;
+    height: 300px;
+    width: 500px;
+    right: 500px;
+    }
+
+#one{
+background-color: #6baff3;
+}
+#two{
+background-color: #E6F09C;
+}
+#three{
+background-color: #EFA19B;
+}
+#four{
+background-color: #495C70;
+}
+#five{
+background-color: #6baff3;
+}
+
+#dotcontainer{
+display: flex;
+justify-content: space-between;
+}
+.dot{
+height: 50px;
+width: 7.5px;
+color: black;
+background-color: gray;
+transition-duration: 0.2s;
+border-radius: 0px 100px 100px 0px;
+margin-top: 10px;
+}
+
 
 
 /* Hawa CSS */

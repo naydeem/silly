@@ -1,13 +1,21 @@
 @import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap);
 
 :root{
-
+    --bg: #1a1b1f;
+    --o_light: #ffffff15;
+    --o_dark: #000000a0;
+    --o_text: #f0f0f0;
+    --o_c1: #ff5252;
+    --o_c2: #ff9260;
+    --o_star: #ff9900;
 }
 
 body{
     font-family: 'Inter', sans-serif;
     margin: 0;
+    color: var(--o_text);
     overflow: hidden;
+    background-color: var(--bg);
 }
 
 main{
@@ -32,7 +40,11 @@ main{
 }
 
 #contList{
+    color: var(--o_text);
     grid-area: list;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Nadim CSS */
@@ -42,3 +54,128 @@ main{
 
 
 /* Oliver CSS */
+
+
+#contList > div{
+    width: 90%;
+    height: 90%;
+    background-color: var(--o_light);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    justify-items: center;
+    align-items: center;
+}
+
+#contList > div > div{
+    background-color: var(--o_light);
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 2fr 1fr;
+    transition-duration: 0.2s;
+}
+#contList>div>div:hover{
+    scale: 1.025;
+    cursor: pointer;
+}
+
+#o_movie1{
+    background-image: url(img/61JIUmlxN9L._AC_UF1000\,1000_QL80_.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#o_movie2{
+    background-image: url(img/https___hypebeast.com_image_2022_01_the-batman-new-poster-robert-pattinson-matt-reeves-000.avif);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+#contList>div>div>div:nth-child(odd){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-size: cover;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+#contList>div>div>div:nth-child(even){
+    background-color: var(--o_dark);
+    display: grid;
+    align-items: center;
+    grid-template-columns: 5fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "o_movieText o_play";
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+
+.o_movieText{
+    grid-area: o_movieText;
+    position: relative;
+    left: 5px;
+    overflow-x: hidden;
+}
+
+.o_title{
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.o_rating{
+    
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.o_rating>div>img{
+    width: 10%;
+    aspect-ratio: 1;
+}
+
+.o_play{
+    position: relative;
+    grid-area: o_play;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.o_play>div{
+    aspect-ratio: 1;
+    width: 80%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.2s;
+    border-radius: 50%;
+}
+.o_play>div:hover{
+    scale: 1.1;
+    border-radius: 30%;
+}
+
+.o_play>div>div{
+    aspect-ratio: 1;
+    height: 100%;
+    background-image: linear-gradient(45deg, var(--o_c1), var(--o_c2));
+    border-radius: inherit;
+    position: absolute;
+}
+
+.o_play>div>img{
+    position: relative;
+    left: 3%;
+    width: 60%;
+    height: 60%;
+    z-index: 1000;
+}

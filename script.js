@@ -4,31 +4,39 @@
 
 $(document).ready(function() {
     
-    const HomeButton = $('<button>', {
-        id: 'HomeButton',
-        class: 'Home-button',
+    const savedButton = $('<button>', {
+        id: 'savedButton',
+        class: 'saved-button',
+        text: 'Sparade'
+    });
+
+    const homeButton = $('<button>', {
+        id: 'homeButton',
+        class: 'home-button',
         text: 'Hem'
     });
 
-    const DiscoverButton = $('<button>', {
-        id: 'DiscoverButton',
-        class: 'Discover-button',
+    const discoverButton = $('<button>', {
+        id: 'discoverButton',
+        class: 'discover-button',
         text: 'Upptäck'
     });
 
-    const Savedbutton = $('<button>', {
-        id: 'Saved',
-        class: 'Saved-button',
-        text: 'Sparade'
+    const ListButton = $('<button>', {
+        id: 'listButton',
+        class: 'list-button',
+        text: 'Min Lista'
     });
+
     
-    $('#UI').append(HomeButton, DiscoverButton, Savedbutton);
+    $('#UI').append(homeButton, savedButton, ListButton,  discoverButton);
 
     
     $("#searchButton").click(function() {
         var searchTerm = $("#searchInput").val().trim();
         
-    
+        
+
     });
 });
 

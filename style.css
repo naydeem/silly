@@ -55,28 +55,38 @@ main{
 
 /* Oliver CSS */
 
+#contList h2{
+    font-size: 1.2vw;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
 
 #contList > div{
     width: 90%;
     height: 90%;
     background-color: var(--o_light);
     border-radius: 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100%;
-    justify-items: center;
+    display: flex;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100%; */
+    justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 #contList > div > div{
     background-color: var(--o_light);
-    width: 90%;
+    width: 19%;
     height: 90%;
     border-radius: 10px;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 2fr 1fr;
     transition-duration: 0.2s;
+    min-width: 15vh;
+    max-height: 30vw;
+    min-height: 10vw;
 }
 #contList>div>div:hover{
     scale: 1.025;
@@ -86,14 +96,32 @@ main{
 #o_movie1{
     background-image: url(img/avatarWoW.jpg);
     background-size: cover;
-    background-position: center;
+    background-position-x: center;
 }
 
 #o_movie2{
     background-image: url(img/theBatman.avif);
     background-size: cover;
-    background-position: center;
+    background-position-x: center;
     
+}
+
+#o_movie3{
+    background-image: url(img/duneune.jpg);
+    background-size: cover;
+    background-position-x: center;
+}
+
+#o_movie4{
+    background-image: url(img/intoSV.jpg);
+    background-size: cover;
+    background-position-x: center;
+}
+
+#o_movie5{
+    background-image: url(img/acrossSV.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 #contList>div>div>div:nth-child(odd){
@@ -126,8 +154,9 @@ main{
 
 .o_title{
     font-weight: 500;
-    font-size: 18px;
+    font-size: 2.5vh;
     margin-bottom: 5px;
+    transition-duration: 0.2s;
 }
 
 .o_rating{
@@ -137,7 +166,7 @@ main{
 }
 
 .o_rating>div>img{
-    width: 10%;
+    width: 11%;
     aspect-ratio: 1;
 }
 
@@ -160,7 +189,7 @@ main{
     border-radius: 50%;
 }
 .o_play>div:hover{
-    scale: 1.1;
+    scale: 1.15;
     border-radius: 30%;
 }
 
@@ -178,4 +207,33 @@ main{
     width: 60%;
     height: 60%;
     z-index: 1000;
+}
+
+@media screen and (max-aspect-ratio: 10/12) {
+    #contList h2{
+        font-size: 3vw;
+        font-weight: 500;
+        margin: 0;
+        padding: 0;
+    }
+    #contList > div{
+        overflow-y: scroll;
+    }
+    #contList > div > div{
+        width: 23%;
+        height: 90%;
+        transition-duration: 0.2s;
+        min-width: 15vh;
+        max-height: 30vw;
+        min-height: 10vw;
+    }
+}
+@media screen and (max-aspect-ratio: 23/46) {
+    #contList > div > div{
+        width: 40%;
+        transition-duration: 0.2s;
+        min-width: 15vh;
+        max-height: 50vw;
+        min-height: 10vw;
+    }
 }

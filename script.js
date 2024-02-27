@@ -126,6 +126,12 @@ $(document).ready(function() {
         
 
     });
+
+    $(document).ready(function() {
+        $("#menuIcon").click(function() {
+            $("#collapsedButtons").toggle();
+        })
+    
 });
 
 //oliver

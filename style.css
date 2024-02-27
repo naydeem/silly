@@ -14,7 +14,7 @@ body{
     font-family: 'Inter', sans-serif;
     margin: 0;
     color: var(--o_text);
-    overflow: hidden;
+    overflow-x: hidden;
     background-color: var(--bg);
 }
 
@@ -219,6 +219,21 @@ margin-top: 10px;
     filter: brightness(1.2); 
     
 }
+.menu-line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    border-radius: 3px;
+}
+
+#menuIcon {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+}
+
+
 
 
 /* Oliver CSS */
@@ -412,5 +427,9 @@ margin-top: 10px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 70px 1fr 1fr;
         grid-template-areas: "ui ui" "intro intro" "list list";
+    }
+
+    #collapsedButtons {
+        display: none;
     }
 }

@@ -111,6 +111,7 @@ margin-top: 10px;
     border-radius: 25px;
     margin-left: 10px;
     transition-duration: 0.2s;
+    font-size: 16px;
 }
 .list-button:hover,
 .saved-button:hover,
@@ -178,7 +179,6 @@ margin-top: 10px;
 }
 
 #intro h1 {
-   
   font-size: 32px;
   background: -webkit-linear-gradient(#ff5252, #ff9260);
   -webkit-background-clip: text;

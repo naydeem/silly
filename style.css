@@ -123,11 +123,11 @@ margin-top: 10px;
     border-radius: 25px;
     margin-left: 10px;
     transition-duration: 0.2s;
+    font-size: 16px;
 }
 .list-button:hover,
 .saved-button:hover,
 .search-button:hover,
-.search.button:hover,
 .home-button:hover,
 .discover-button:hover{
     scale: 1.05;
@@ -140,10 +140,9 @@ margin-top: 10px;
     font-size: 48px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    /*color: #7623c4;*/
     color: #f0f0f0;
     transform: translate(-50%, -50%);
-    text-shadow: 4px 4px 4px rgba(4, 4, 3, 8.6); 
+    text-shadow: 4px 4px 4px rgba(243, 149, 41, 0.8); 
 }
 
 #UI {
@@ -154,19 +153,24 @@ margin-top: 10px;
     position: relative;
 }
 
+.saved-button,
+.home-button,
+.discover-button,
+.list-button {
+    position: relative;
+    z-index: 1;
+}
+
 .search-container {
-    position: fixed;
+    position: absolute;
     top: 20px;
     right: 20px;
-    display: flex;
-    align-items: center;
-}
+    }
 
 .search-input {
     padding: 10px;
     border: none;
-    color: #8a2be2;
-    color: #080707;
+    color: #060606;
     border-radius: 25px;
     outline: none;
     width: 200px;
@@ -180,6 +184,8 @@ margin-top: 10px;
 #intro {
     text-align: center;
     margin-top: 50px;
+    
+
 }
 
 #intro h1 {
@@ -202,13 +208,15 @@ margin-top: 10px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 20px;
     transition-duration: 0.3s;
+    
 }
 
 .start-button:hover {
     filter: brightness(1.2); 
+    
 }
 
 

@@ -171,9 +171,12 @@ margin-top: 10px;
 #intro {
     text-align: center;
     margin-top: 50px;
+    
+
 }
 
 #intro h1 {
+   
   font-size: 32px;
   background: -webkit-linear-gradient(#ff5252, #ff9260);
   -webkit-background-clip: text;

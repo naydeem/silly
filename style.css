@@ -14,7 +14,7 @@ body{
     font-family: 'Inter', sans-serif;
     margin: 0;
     color: var(--o_text);
-    overflow: hidden;
+    overflow-x: hidden;
     background-color: var(--bg);
 }
 
@@ -40,6 +40,7 @@ main{
 
 #intro{
     grid-area: intro;
+    mix-blend-mode: difference;
 }
 
 #contList{

@@ -142,3 +142,12 @@ $('#o_movie1').click(function(){
 $('#o_movie2').click(function(){
     window.open('https://www.imdb.com/title/tt1877830/')
 });
+$('#o_movie3').click(function(){
+    window.open('https://www.imdb.com/title/tt1160419/')
+});
+$('#o_movie4').click(function(){
+    window.open('https://www.imdb.com/title/tt4633694/')
+});
+$('#o_movie5').click(function(){
+    window.open('https://www.imdb.com/title/tt9362722/')
+});

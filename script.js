@@ -7,7 +7,7 @@ $("#d1").click(function(){
     slideIndex=1;
     console.log(slideIndex);
     if(slideIndex==1){
-        $("#d1").css("background-color","black");
+        $("#d1").css("background-color","white");
         $("#d2").css("background-color","gray");
         $("#d3").css("background-color","gray");
         $("#d4").css("background-color","gray");
@@ -19,7 +19,7 @@ $("#d2").click(function(){
     console.log(slideIndex);
     if(slideIndex==2){
         $("#d1").css("background-color","gray");
-        $("#d2").css("background-color","black");
+        $("#d2").css("background-color","white");
         $("#d3").css("background-color","gray");
         $("#d4").css("background-color","gray");
     }
@@ -31,7 +31,7 @@ $("#d3").click(function(){
     if(slideIndex==3){
         $("#d1").css("background-color","gray");
         $("#d2").css("background-color","gray");
-        $("#d3").css("background-color","black");
+        $("#d3").css("background-color","white");
         $("#d4").css("background-color","gray");
     }
 })
@@ -43,7 +43,7 @@ $("#d4").click(function(){
         $("#d1").css("background-color","gray");
         $("#d2").css("background-color","gray");
         $("#d3").css("background-color","gray");
-        $("#d4").css("background-color","black");
+        $("#d4").css("background-color","white");
     }
 })
 
@@ -52,7 +52,7 @@ var inputValue = $(".pic").css("right");
 function button(){
     for (var i = 1; i <= 4; i++) {
         if (slideIndex == i) {
-            $("#d" + i).css("background-color", "black");
+            $("#d" + i).css("background-color", "white");
         } else {
             $("#d" + i).css("background-color", "gray");
         }
@@ -62,7 +62,7 @@ function button(){
 
 function left(){
     $(".pic").animate({
-        right:"-=500"
+        right:"-=700"
     });
     slideIndex++;
     console.log(slideIndex);
@@ -71,7 +71,7 @@ function left(){
 function left2(){
     var inputValue = $(".pic").css("right");
 if (inputValue==="0px"){
-    $(".pic").css("right","2000px");
+    $(".pic").css("right","2800px");
 slideIndex=0;
 }
     left();
@@ -84,6 +84,9 @@ slideIndex=0;
 }
 
 setInterval(left2,4000);
+
+
+
 
 //hawa
 

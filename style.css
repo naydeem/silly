@@ -56,10 +56,11 @@ main{
     grid-area: slider;
     display: flex;
     overflow: hidden;
-    height: 300px;
-    width: 500px;
+    height: 500px;
+    width: 700px;
     background-color: black;
     border-radius: 10px;
+
 }
 
 #window>div{
@@ -68,9 +69,9 @@ main{
 
 #window>div>div{
     position: relative;
-    height: 300px;
-    width: 500px;
-    right: 500px;
+    height: 500px;
+    width: 700px;
+    right: 700px;
     }
 
 #one{
@@ -94,9 +95,9 @@ display: flex;
 justify-content: space-between;
 }
 .dot{
-height: 50px;
-width: 7.5px;
-color: black;
+height: 7.5vh;
+width: 0.5vw;
+color: var(--o_text);
 background-color: gray;
 transition-duration: 0.2s;
 border-radius: 0px 100px 100px 0px;
@@ -401,5 +402,15 @@ margin-top: 10px;
         min-width: 15vh;
         max-height: 50vw;
         min-height: 10vw;
+    }
+
+    #contSlide{
+        display: none;
+    }
+
+    main{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 70px 1fr 1fr;
+        grid-template-areas: "ui ui" "intro intro" "list list";
     }
 }

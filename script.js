@@ -116,16 +116,11 @@ $(document).ready(function() {
         text: 'Lista'
     });
 
-    const searchIcon = $('<img>', { 
-        src: 'img/icons8-search-30.png',
-        alt: 'Search Icon' 
-    });
-
     const searchButton = $('<button>', { 
         id: 'searchButton',
         class: 'search-button',
         text: 'Sök'
-    }).prepend(searchIcon); 
+    })
 
     const searchContainer = $('<div>', { 
         class: 'search-container'
@@ -135,7 +130,6 @@ $(document).ready(function() {
     
     $("#searchButton").click(function() {
         var searchTerm = $("#searchInput").val().trim();
-        // Använd searchTerm som söktermen för att utföra en sökning
     });
 }); 
 

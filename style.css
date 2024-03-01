@@ -271,11 +271,7 @@ background-clip: text;
 #menuIcon.open .menu-line:last-child {
     transform: rotate(-45deg) translateY(-4px);
 }
-
-   .menu-icon{
-
-     display: none;   
-    }
+   
 
 
 @media screen and (max-width: 600px) {
@@ -295,13 +291,9 @@ background-clip: text;
 .search-input:focus {
     width: 300px;
 }
-   
     
     .search-button {
         display: none;
-    }
-    .search-logo {
-        display: flex;
     }
     .menu-line {
         width: 25px;

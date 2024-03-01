@@ -126,6 +126,29 @@ $(document).ready(function() {
         
 
     });
+
+    $(document).ready(function() {
+        $("#menuIcon").click(function() {
+            $(".saved-button, .home-button, .discover-button, .list-button").toggle();
+        });
+    });
+
+    // Hämta logotypen och sökfältet
+const searchLogo = document.querySelector('.search-logo');
+const searchInput = document.querySelector('.search-input');
+
+// Lägg till en händelselyssnare för klick på logotypen
+searchLogo.addEventListener('click', function() {
+    // Lägg till/ta bort "active" klassen för att ändra storlek på logotypen och visa/dölja sökfältet
+    searchLogo.classList.toggle('active');
+    searchInput.classList.toggle('active');
+
+    // Dölj sökknappen när logotypen klickas
+    const searchButton = document.querySelector('.search-button');
+    searchButton.style.display = 'none';
+});
+
+    
 });
 
 //oliver
@@ -141,4 +164,13 @@ $('#o_movie1').click(function(){
 });
 $('#o_movie2').click(function(){
     window.open('https://www.imdb.com/title/tt1877830/')
+});
+$('#o_movie3').click(function(){
+    window.open('https://www.imdb.com/title/tt1160419/')
+});
+$('#o_movie4').click(function(){
+    window.open('https://www.imdb.com/title/tt4633694/')
+});
+$('#o_movie5').click(function(){
+    window.open('https://www.imdb.com/title/tt9362722/')
 });

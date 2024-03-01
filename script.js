@@ -14,7 +14,7 @@ $("#d1").click(function(){
     }
 })
 $("#d2").click(function(){
-    $(".pic").css("right","500px");
+    $(".pic").css("right","700px");
     slideIndex=2;
     console.log(slideIndex);
     if(slideIndex==2){
@@ -25,7 +25,7 @@ $("#d2").click(function(){
     }
 })
 $("#d3").click(function(){
-    $(".pic").css("right","1000px");
+    $(".pic").css("right","1400px");
     slideIndex=3;
     console.log(slideIndex);
     if(slideIndex==3){
@@ -36,7 +36,7 @@ $("#d3").click(function(){
     }
 })
 $("#d4").click(function(){
-    $(".pic").css("right","1500px");
+    $(".pic").css("right","2100px");
     slideIndex=4;
     console.log(slideIndex);
     if(slideIndex==4){
@@ -157,4 +157,13 @@ $('#o_movie1').click(function(){
 });
 $('#o_movie2').click(function(){
     window.open('https://www.imdb.com/title/tt1877830/')
+});
+$('#o_movie3').click(function(){
+    window.open('https://www.imdb.com/title/tt1160419/')
+});
+$('#o_movie4').click(function(){
+    window.open('https://www.imdb.com/title/tt4633694/')
+});
+$('#o_movie5').click(function(){
+    window.open('https://www.imdb.com/title/tt9362722/')
 });

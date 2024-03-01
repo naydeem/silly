@@ -191,7 +191,7 @@ margin-top: 10px;
 #intro h1 {
   font-size: 40px;
   background: -webkit-linear-gradient(#ff5252, #ff9260);
-  -webkit-background-clip: text;
+background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 

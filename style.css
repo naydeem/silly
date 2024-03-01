@@ -146,7 +146,6 @@ margin-top: 10px;
 }
 
 #UI {
-    /*background-color: #252551;*/
     background-image: linear-gradient(#ffffff05, var(--bg));
     color: #fff;
     padding: 20px;

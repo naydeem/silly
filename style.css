@@ -40,7 +40,6 @@ main{
 
 #intro{
     grid-area: intro;
-    mix-blend-mode: difference;
 }
 
 #contList{

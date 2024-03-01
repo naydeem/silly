@@ -110,47 +110,40 @@ $(document).ready(function() {
         text: 'Upptäck'
     });
 
-    const ListButton = $('<button>', {
+    const listButton = $('<button>', { 
         id: 'listButton',
         class: 'list-button',
-        text: 'Min Lista'
+        text: 'Lista'
     });
 
-    
-    $('#UI').append(homeButton, savedButton, ListButton,  discoverButton);
+    const searchIcon = $('<img>', { 
+        src: 'img/icons8-search-30.png',
+        alt: 'Search Icon' 
+    });
 
+    const searchButton = $('<button>', { 
+        id: 'searchButton',
+        class: 'search-button',
+        text: 'Sök'
+    }).prepend(searchIcon); 
+
+    const searchContainer = $('<div>', { 
+        class: 'search-container'
+    }).append(searchButton); 
+
+    $('#UI').append(homeButton, savedButton, listButton, discoverButton, searchContainer);
     
     $("#searchButton").click(function() {
         var searchTerm = $("#searchInput").val().trim();
-        
-        
-
+        // Använd searchTerm som söktermen för att utföra en sökning
     });
+}); 
 
-    $(document).ready(function() {
-        $("#menuIcon").click(function() {
-            $(".saved-button, .home-button, .discover-button, .list-button").toggle();
-        });
+$(document).ready(function() {
+    $("#menuIcon").click(function() {
+        $("#collapsedButtons").toggle();
     });
-
-    // Hämta logotypen och sökfältet
-const searchLogo = document.querySelector('.search-logo');
-const searchInput = document.querySelector('.search-input');
-
-// Lägg till en händelselyssnare för klick på logotypen
-searchLogo.addEventListener('click', function() {
-    // Lägg till/ta bort "active" klassen för att ändra storlek på logotypen och visa/dölja sökfältet
-    searchLogo.classList.toggle('active');
-    searchInput.classList.toggle('active');
-
-    // Dölj sökknappen när logotypen klickas
-    const searchButton = document.querySelector('.search-button');
-    searchButton.style.display = 'none';
 });
-
-    
-});
-
 //oliver
 
 // $('body').click(function(){

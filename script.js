@@ -126,7 +126,7 @@ $(document).ready(function() {
         class: 'search-container'
     }).append(searchButton); 
 
-    $('#UI').append(homeButton, savedButton, listButton, discoverButton, searchContainer);
+    $('#UI').append(homeButton, savedButton, listButton, discoverButton,);
     
     $("#searchButton").click(function() {
         var searchTerm = $("#searchInput").val().trim();

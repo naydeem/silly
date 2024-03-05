@@ -110,7 +110,6 @@ margin-top: 10px;
 
 .list-button,
 .saved-button,
-.search-button,
 .home-button,
 .discover-button {
     
@@ -123,7 +122,22 @@ margin-top: 10px;
         font-size: 16px;
         transition-duration: 0.2s;
         margin: 5px; 
-        display: none;
+        
+
+}
+
+.search-button{
+
+    padding: 10px 20px;
+    background-image: linear-gradient(to bottom, #ff5252, #ff9260);
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition-duration: 0.2s;
+    margin: 5px;
+
 
 }
 .saved-button:hover,
@@ -147,7 +161,7 @@ margin-top: 10px;
 }
 
 #UI {
-    background-image: linear-gradient(#ffffff05, var(--bg));
+   
     color: #fff;
     padding: 20px;
     position: relative;

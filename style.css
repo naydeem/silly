@@ -104,7 +104,10 @@ border-radius: 0px 100px 100px 0px;
 margin-top: 10px;
 }
 
-
+.dot:hover{
+width: 1vw;
+cursor:pointer;
+}
 
 /* Hawa CSS */
 
@@ -199,10 +202,17 @@ margin-top: 10px;
 }
 
 #intro {
-    text-align: center;
-    margin-top: 50px;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+#intro > div{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #intro h1 {

@@ -5,7 +5,6 @@ var slideIndex = 0;
 $("#d1").click(function(){
     $(".pic").css("right","0px");
     slideIndex=1;
-    console.log(slideIndex);
     if(slideIndex==1){
         $("#d1").css("background-color","white");
         $("#d2").css("background-color","gray");
@@ -16,7 +15,7 @@ $("#d1").click(function(){
 $("#d2").click(function(){
     $(".pic").css("right","700px");
     slideIndex=2;
-    console.log(slideIndex);
+    (slideIndex);
     if(slideIndex==2){
         $("#d1").css("background-color","gray");
         $("#d2").css("background-color","white");
@@ -27,7 +26,6 @@ $("#d2").click(function(){
 $("#d3").click(function(){
     $(".pic").css("right","1400px");
     slideIndex=3;
-    console.log(slideIndex);
     if(slideIndex==3){
         $("#d1").css("background-color","gray");
         $("#d2").css("background-color","gray");
@@ -37,8 +35,6 @@ $("#d3").click(function(){
 })
 $("#d4").click(function(){
     $(".pic").css("right","2100px");
-    slideIndex=4;
-    console.log(slideIndex);
     if(slideIndex==4){
         $("#d1").css("background-color","gray");
         $("#d2").css("background-color","gray");
@@ -56,7 +52,6 @@ function button(){
         } else {
             $("#d" + i).css("background-color", "gray");
         }
-        console.log(inputValue);
     }
 }
 
@@ -65,7 +60,6 @@ function left(){
         right:"-=700"
     });
     slideIndex++;
-    console.log(slideIndex);
 }
 
 function left2(){
@@ -78,7 +72,6 @@ slideIndex=0;
     button();
   if (slideIndex>=5){
     slideIndex=0;
-    console.log(slideIndex);
   }
 
 }

@@ -37,7 +37,6 @@ $("#d3").click(function(){
 })
 $("#d4").click(function(){
     $(".pic").css("right","2100px");
-    slideIndex=4;
     console.log(slideIndex);
     if(slideIndex==4){
         $("#d1").css("background-color","gray");

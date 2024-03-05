@@ -104,7 +104,10 @@ border-radius: 0px 100px 100px 0px;
 margin-top: 10px;
 }
 
-
+.dot:hover{
+width: 1vw;
+cursor:pointer;
+}
 
 /* Hawa CSS */
 

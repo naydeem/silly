@@ -125,6 +125,7 @@ cursor:pointer;
         font-size: 16px;
         transition-duration: 0.2s;
         margin: 5px; 
+        display: none;
         
 
 }
@@ -144,6 +145,7 @@ cursor:pointer;
 
 }
 .saved-button:hover,
+.search-button:hover,
 .home-button:hover,
 .discover-button:hover,
 .list-button:hover {
@@ -218,7 +220,7 @@ cursor:pointer;
 #intro h1 {
   font-size: 40px;
   background: -webkit-linear-gradient(#ff5252, #ff9260);
-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 

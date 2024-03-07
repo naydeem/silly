@@ -110,7 +110,6 @@ margin-top: 10px;
 
 .list-button,
 .saved-button,
-.search-button,
 .home-button,
 .discover-button {
     
@@ -126,6 +125,22 @@ margin-top: 10px;
         display: none;
 
 }
+
+.search-button{
+
+    padding: 10px 20px;
+    background-image: linear-gradient(to bottom, #ff5252, #ff9260);
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition-duration: 0.2s;
+    margin: 5px;
+
+}
+
+.search-button:hover,
 .saved-button:hover,
 .home-button:hover,
 .discover-button:hover,

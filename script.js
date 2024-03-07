@@ -95,30 +95,35 @@ $(document).ready(function() {
     const savedButton = $('<button>', {
         id: 'savedButton',
         class: 'saved-button',
+        tabIndex: '0',
         text: 'Sparade'
     });
 
     const homeButton = $('<button>', {
         id: 'homeButton',
         class: 'home-button h_button',
+        tabIndex: '1',
         text: 'Hem'
     });
 
     const discoverButton = $('<button>', {
         id: 'discoverButton',
         class: 'discover-button',
+        tabIndex: '2',
         text: 'Upptäck'
     });
 
     const listButton = $('<button>', { 
         id: 'listButton',
         class: 'list-button',
+        tabIndex: '3',
         text: 'Lista'
     });
 
     const searchButton = $('<button>', { 
         id: 'searchButton',
         class: 'search-button',
+        tabIndex: '4',
         text: 'Sök'
     })
 
@@ -128,6 +133,8 @@ $(document).ready(function() {
 
     $('#UI').append(homeButton, savedButton, listButton, discoverButton, searchContainer);
     
+    $('#homeButton').attr("tabIndex","1");
+
     $("#searchButton").click(function() {
         var searchTerm = $("#searchInput").val().trim();
     });
@@ -161,3 +168,12 @@ $('#o_movie4').click(function(){
 $('#o_movie5').click(function(){
     window.open('https://www.imdb.com/title/tt9362722/')
 });
+
+addEventListener("focus", (event) => {
+    eventTarget.addEventListener("keydown", (event) => {
+        if (event.keyCode === 13) {
+            const event = new MouseEvent('click')
+            target.dispatchEvent(event)
+        }
+      });
+  });

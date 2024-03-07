@@ -247,10 +247,6 @@ cursor:pointer;
     filter: brightness(1.2); 
     
 }
-#menuicon {
-
-    display: none;
-}
 
 #collapsedButtons.open {
     display: block;
@@ -273,7 +269,7 @@ cursor:pointer;
     justify-content: space-between;
     width: 25px;
     height: 20px;
-    padding: 10px;
+    padding: 0,5px;
    
 }
 

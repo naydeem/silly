@@ -104,7 +104,10 @@ border-radius: 0px 100px 100px 0px;
 margin-top: 10px;
 }
 
-
+.dot:hover{
+width: 1vw;
+cursor:pointer;
+}
 
 /* Hawa CSS */
 
@@ -123,6 +126,22 @@ margin-top: 10px;
         transition-duration: 0.2s;
         margin: 5px; 
         display: none;
+        
+
+}
+
+.search-button{
+
+    padding: 10px 20px;
+    background-image: linear-gradient(to bottom, #ff5252, #ff9260);
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition-duration: 0.2s;
+    margin: 5px;
+
 
 }
 
@@ -142,6 +161,7 @@ margin-top: 10px;
 
 .search-button:hover,
 .saved-button:hover,
+.search-button:hover,
 .home-button:hover,
 .discover-button:hover,
 .list-button:hover {
@@ -162,7 +182,7 @@ margin-top: 10px;
 }
 
 #UI {
-    background-image: linear-gradient(#ffffff05, var(--bg));
+   
     color: #fff;
     padding: 20px;
     position: relative;
@@ -216,7 +236,7 @@ margin-top: 10px;
 #intro h1 {
   font-size: 40px;
   background: -webkit-linear-gradient(#ff5252, #ff9260);
-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -243,10 +263,6 @@ background-clip: text;
     filter: brightness(1.2); 
     
 }
-#menuicon {
-
-    display: none;
-}
 
 #collapsedButtons.open {
     display: block;
@@ -269,7 +285,7 @@ background-clip: text;
     justify-content: space-between;
     width: 25px;
     height: 20px;
-    padding: 10px;
+    
    
 }
 

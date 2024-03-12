@@ -337,6 +337,10 @@ background-clip: text;
     padding: 0;
 }
 
+#contList button {
+    padding: 0;
+}
+
 #contList > div{
     width: 90%;
     height: 90%;
@@ -348,7 +352,8 @@ background-clip: text;
     flex-wrap: wrap;
 }
 
-#contList > div > div{
+#contList>div>button{
+    color: var(--o_text);
     background-color: var(--o_light);
     width: 19%;
     height: 90%;
@@ -361,9 +366,19 @@ background-clip: text;
     max-height: 30vw;
     min-height: 10vw;
 }
-#contList>div>div:hover{
+#contList>div>button:hover{
     scale: 1.025;
     cursor: pointer;
+}
+#contList>div>button:focus{
+    scale: 1.025;
+    cursor: pointer;
+}
+
+#contList button{
+    border: none;
+    outline: none;
+    padding: none;
 }
 
 #o_movie1{
@@ -397,7 +412,7 @@ background-clip: text;
     background-position: center;
 }
 
-#contList>div>div>div:nth-child(odd){
+#contList>div>button>div:nth-child(odd){
     display: flex;
     justify-content: center;
     align-items: center;
@@ -407,7 +422,8 @@ background-clip: text;
     border-top-right-radius: inherit;
 }
 
-#contList>div>div>div:nth-child(even){
+#contList>div>button>div:nth-child(even){
+    height: 100%;
     background-color: var(--o_dark);
     display: grid;
     align-items: center;
@@ -465,6 +481,10 @@ background-clip: text;
     scale: 1.15;
     border-radius: 30%;
 }
+.o_play>div:focus{
+    scale: 1.15;
+    border-radius: 30%;
+}
 
 .o_play>div>div{
     aspect-ratio: 1;
@@ -492,7 +512,7 @@ background-clip: text;
     #contList > div{
         overflow-y: scroll;
     }
-    #contList > div > div{
+    #contList>div>button{
         width: 23%;
         height: 90%;
         transition-duration: 0.2s;
@@ -501,8 +521,21 @@ background-clip: text;
         min-height: 10vw;
     }
 }
+
+@media screen and (min-aspect-ratio: 23/46) {
+    #contList>div>button{
+        filter: grayscale(1) brightness(0.5);
+    }
+    #contList>div>button:hover{
+        filter:grayscale(0) brightness(1.2);
+    }
+    #contList>div>button:focus{
+        filter:grayscale(0) brightness(1.2);
+    }
+}
+
 @media screen and (max-aspect-ratio: 23/46) {
-    #contList > div > div{
+    #contList>div>button{
         width: 40%;
         transition-duration: 0.2s;
         min-width: 15vh;

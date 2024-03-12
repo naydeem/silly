@@ -168,12 +168,3 @@ $('#o_movie4').click(function(){
 $('#o_movie5').click(function(){
     window.open('https://www.imdb.com/title/tt9362722/')
 });
-
-addEventListener("focus", (event) => {
-    eventTarget.addEventListener("keydown", (event) => {
-        if (event.keyCode === 13) {
-            const event = new MouseEvent('click')
-            target.dispatchEvent(event)
-        }
-      });
-  });

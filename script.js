@@ -127,6 +127,7 @@ $(document).ready(function() {
 }); 
 
 $(document).ready(function() {
+    $("#collapsedButtons").toggle();
     $("#menuIcon").click(function() {
         $("#collapsedButtons").toggle();
     });

@@ -249,17 +249,17 @@ cursor:pointer;
 }
 
 #collapsedButtons.open {
-    display: block;
+    display: flex;
 }
 
 #collapsedButtons button {
     display: flex;
     margin-bottom: 10px;
-    padding: 10px 20px;
+    padding: 10px 10px;
     color: #ffffff;
     border: none; 
     font-size: 16px;
-    
+    cursor: pointer;
 }
 
 #menuIcon {
@@ -320,13 +320,13 @@ cursor:pointer;
     .menu-line {
         width: 25px;
     }
-    #menuIcon {
+    
+    
+#menuIcon {
         display: flex;
     }
-    }
 
-
-
+}
 /*oliver*/
 
 

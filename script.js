@@ -88,30 +88,35 @@ $(document).ready(function() {
     const savedButton = $('<button>', {
         id: 'savedButton',
         class: 'saved-button',
+        tabIndex: '0',
         text: 'Sparade'
     });
 
     const homeButton = $('<button>', {
         id: 'homeButton',
         class: 'home-button h_button',
+        tabIndex: '1',
         text: 'Hem'
     });
 
     const discoverButton = $('<button>', {
         id: 'discoverButton',
         class: 'discover-button',
+        tabIndex: '2',
         text: 'Upptäck'
     });
 
     const listButton = $('<button>', { 
         id: 'listButton',
         class: 'list-button',
+        tabIndex: '3',
         text: 'Lista'
     });
 
     const searchButton = $('<button>', { 
         id: 'searchButton',
         class: 'search-button',
+        tabIndex: '4',
         text: 'Sök'
     })
 
@@ -121,6 +126,8 @@ $(document).ready(function() {
 
     $('#UI').append(homeButton, savedButton, listButton, discoverButton,);
     
+    $('#homeButton').attr("tabIndex","1");
+
     $("#searchButton").click(function() {
         var searchTerm = $("#searchInput").val().trim();
     });

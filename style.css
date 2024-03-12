@@ -144,6 +144,22 @@ cursor:pointer;
 
 
 }
+
+.search-button{
+
+    padding: 10px 20px;
+    background-image: linear-gradient(to bottom, #ff5252, #ff9260);
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition-duration: 0.2s;
+    margin: 5px;
+
+}
+
+.search-button:hover,
 .saved-button:hover,
 .search-button:hover,
 .home-button:hover,
@@ -337,6 +353,10 @@ cursor:pointer;
     padding: 0;
 }
 
+#contList button {
+    padding: 0;
+}
+
 #contList > div{
     width: 90%;
     height: 90%;
@@ -348,7 +368,8 @@ cursor:pointer;
     flex-wrap: wrap;
 }
 
-#contList > div > div{
+#contList>div>button{
+    color: var(--o_text);
     background-color: var(--o_light);
     width: 19%;
     height: 90%;
@@ -361,9 +382,19 @@ cursor:pointer;
     max-height: 30vw;
     min-height: 10vw;
 }
-#contList>div>div:hover{
+#contList>div>button:hover{
     scale: 1.025;
     cursor: pointer;
+}
+#contList>div>button:focus{
+    scale: 1.025;
+    cursor: pointer;
+}
+
+#contList button{
+    border: none;
+    outline: none;
+    padding: none;
 }
 
 #o_movie1{
@@ -397,7 +428,7 @@ cursor:pointer;
     background-position: center;
 }
 
-#contList>div>div>div:nth-child(odd){
+#contList>div>button>div:nth-child(odd){
     display: flex;
     justify-content: center;
     align-items: center;
@@ -407,7 +438,8 @@ cursor:pointer;
     border-top-right-radius: inherit;
 }
 
-#contList>div>div>div:nth-child(even){
+#contList>div>button>div:nth-child(even){
+    height: 100%;
     background-color: var(--o_dark);
     display: grid;
     align-items: center;
@@ -465,6 +497,10 @@ cursor:pointer;
     scale: 1.15;
     border-radius: 30%;
 }
+.o_play>div:focus{
+    scale: 1.15;
+    border-radius: 30%;
+}
 
 .o_play>div>div{
     aspect-ratio: 1;
@@ -492,7 +528,7 @@ cursor:pointer;
     #contList > div{
         overflow-y: scroll;
     }
-    #contList > div > div{
+    #contList>div>button{
         width: 23%;
         height: 90%;
         transition-duration: 0.2s;
@@ -501,8 +537,21 @@ cursor:pointer;
         min-height: 10vw;
     }
 }
+
+@media screen and (min-aspect-ratio: 23/46) {
+    #contList>div>button{
+        filter: grayscale(1) brightness(0.5);
+    }
+    #contList>div>button:hover{
+        filter:grayscale(0) brightness(1.2);
+    }
+    #contList>div>button:focus{
+        filter:grayscale(0) brightness(1.2);
+    }
+}
+
 @media screen and (max-aspect-ratio: 23/46) {
-    #contList > div > div{
+    #contList>div>button{
         width: 40%;
         transition-duration: 0.2s;
         min-width: 15vh;

@@ -1,11 +1,21 @@
 @import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap);
 
-
+:root{
+    --bg: #1a1b1f;
+    --o_light: #ffffff15;
+    --o_dark: #000000a0;
+    --o_text: #f0f0f0;
+    --o_c1: #ff5252;
+    --o_c2: #ff9260;
+    --o_star: #ff9900;
+}
 
 body{
     font-family: 'Inter', sans-serif;
     margin: 0;
-    overflow: hidden;
+    color: var(--o_text);
+    overflow-x: hidden;
+    background-color: var(--bg);
 }
 
 main{
@@ -22,7 +32,10 @@ main{
 }
 
 #contSlide{
-    grid-area: slider;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
 }
 
 #intro{
@@ -30,38 +43,130 @@ main{
 }
 
 #contList{
+    color: var(--o_text);
     grid-area: list;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Nadim CSS */
 
+#window{
+    grid-area: slider;
+    display: flex;
+    overflow: hidden;
+    height: 500px;
+    width: 700px;
+    background-color: black;
+    border-radius: 10px;
+
+}
+
+#window>div{
+    display: flex;
+}
+
+#window>div>div{
+    position: relative;
+    height: 500px;
+    width: 700px;
+    right: 700px;
+    }
+
+#one{
+background-color: #6baff3;
+}
+#two{
+background-color: #E6F09C;
+}
+#three{
+background-color: #EFA19B;
+}
+#four{
+background-color: #495C70;
+}
+#five{
+background-color: #6baff3;
+}
+
+#dotcontainer{
+display: flex;
+justify-content: space-between;
+}
+.dot{
+height: 7.5vh;
+width: 0.5vw;
+color: var(--o_text);
+background-color: gray;
+transition-duration: 0.2s;
+border-radius: 0px 100px 100px 0px;
+margin-top: 10px;
+}
+
+.dot:hover{
+width: 1vw;
+cursor:pointer;
+}
 
 /* Hawa CSS */
 
 .list-button,
 .saved-button,
-.search-button,
-.search.button,
 .home-button,
 .discover-button {
-    padding: 10px 20px;
-    border: none;
-    /*background-color: #483d8b;*/
-    background-image: linear-gradient(to left, #ff5252, #ff9260);
-    color: #ffffff;
-    border-radius: 5px;
-    cursor: pointer;
-    border-radius: 25px;
-    margin-left: 10px;
-    transition-duration: 0.2s;
+    
+        padding: 10px 20px;
+        background-image: linear-gradient(to bottom, #ff5252, #ff9260);
+        color: #ffffff;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        font-size: 16px;
+        transition-duration: 0.2s;
+        margin: 5px; 
+        display: none;
+        
+
 }
-.list-button:hover,
+
+.search-button{
+
+    padding: 10px 20px;
+    background-image: linear-gradient(to bottom, #ff5252, #ff9260);
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition-duration: 0.2s;
+    margin: 5px;
+
+
+}
+
+.search-button{
+
+    padding: 10px 20px;
+    background-image: linear-gradient(to bottom, #ff5252, #ff9260);
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition-duration: 0.2s;
+    margin: 5px;
+
+}
+
+.search-button:hover,
 .saved-button:hover,
 .search-button:hover,
-.search.button:hover,
 .home-button:hover,
-.discover-button:hover{
-    scale: 1.05;
+.discover-button:hover,
+.list-button:hover {
+    transform: scale(1.05);
+    
 }
 
 .centered-text {
@@ -71,33 +176,39 @@ main{
     font-size: 48px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    /*color: #7623c4;*/
     color: #f0f0f0;
     transform: translate(-50%, -50%);
-    text-shadow: 4px 4px 4px rgba(4, 4, 3, 8.6); 
+    font-weight: 600;
 }
 
 #UI {
-    /*background-color: #252551;*/
-    background-image: linear-gradient(#202020, #1a1a1a);
+   
     color: #fff;
     padding: 20px;
     position: relative;
 }
 
+.saved-button,
+.home-button,
+.discover-button,
+.list-button {
+    position: relative;
+    z-index: 1;
+}
+
 .search-container {
-    position: fixed;
-    top: 20px;
+    
+    position: absolute;
+    top: 10px;
     right: 20px;
-    display: flex;
-    align-items: center;
+    padding-left: 40px;
+    color: #f0f0f0;
 }
 
 .search-input {
     padding: 10px;
     border: none;
-    color: #8a2be2;
-    color: #080707;
+    color: #060606;
     border-radius: 25px;
     outline: none;
     width: 200px;
@@ -109,20 +220,29 @@ main{
 }
 
 #intro {
-    text-align: center;
-    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#intro > div{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #intro h1 {
-  font-size: 32px;
+  font-size: 40px;
   background: -webkit-linear-gradient(#ff5252, #ff9260);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 #intro p {
     font-size: 18px;
-    color: #060606;
+    color: #f2eaea;
     margin-bottom: 20px;
 }
 
@@ -133,14 +253,320 @@ main{
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 20px;
     transition-duration: 0.3s;
+    
 }
 
 .start-button:hover {
     filter: brightness(1.2); 
+    
+}
+
+#collapsedButtons.open {
+    display: flex;
+}
+
+#collapsedButtons button {
+    display: flex;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    color: #ffffff;
+    border: none; 
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#menuIcon {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    
+   
+}
+
+.menu-line {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 3px;
+    transition: transform 0.3s ease;
 }
 
 
-/* Oliver CSS */
+#menuIcon.open .menu-line.middle {
+    opacity: 0;
+}
+
+#menuIcon.open .menu-line:first-child {
+    transform: rotate(45deg) translateY(4px);
+}
+
+#menuIcon.open .menu-line:last-child {
+    transform: rotate(-45deg) translateY(-4px);
+}
+   
+
+
+@media screen and (max-width: 600px) {
+
+ 
+.list-button,
+.saved-button,
+.home-button,
+.discover-button {
+
+    display: none;
+}
+
+.search-input{
+    display: none;
+}
+.search-input:focus {
+    width: 300px;
+}
+    
+    .search-button {
+        display: none;
+    }
+    .menu-line {
+        width: 25px;
+    }
+    
+    
+#menuIcon {
+        display: flex;
+    }
+
+}
+/*oliver*/
+
+
+#contList h2{
+    font-size: 1.2vw;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+#contList button {
+    padding: 0;
+}
+
+#contList > div{
+    width: 90%;
+    height: 90%;
+    background-color: var(--o_light);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#contList>div>button{
+    color: var(--o_text);
+    background-color: var(--o_light);
+    width: 19%;
+    height: 90%;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 2fr 1fr;
+    transition-duration: 0.2s;
+    min-width: 15vh;
+    max-height: 30vw;
+    min-height: 10vw;
+}
+#contList>div>button:hover{
+    scale: 1.025;
+    cursor: pointer;
+}
+#contList>div>button:focus{
+    scale: 1.025;
+    cursor: pointer;
+}
+
+#contList button{
+    border: none;
+    outline: none;
+    padding: none;
+}
+
+#o_movie1{
+    background-image: url(img/avatarWoW.jpg);
+    background-size: cover;
+    background-position-x: center;
+}
+
+#o_movie2{
+    background-image: url(img/theBatman.avif);
+    background-size: cover;
+    background-position-x: center;
+    
+}
+
+#o_movie3{
+    background-image: url(img/duneune.jpg);
+    background-size: cover;
+    background-position-x: center;
+}
+
+#o_movie4{
+    background-image: url(img/intoSV.jpg);
+    background-size: cover;
+    background-position-x: center;
+}
+
+#o_movie5{
+    background-image: url(img/acrossSV.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#contList>div>button>div:nth-child(odd){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-size: cover;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+#contList>div>button>div:nth-child(even){
+    height: 100%;
+    background-color: var(--o_dark);
+    display: grid;
+    align-items: center;
+    grid-template-columns: 5fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "o_movieText o_play";
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+
+.o_movieText{
+    grid-area: o_movieText;
+    position: relative;
+    left: 5px;
+    overflow-x: hidden;
+}
+
+.o_title{
+    font-weight: 500;
+    font-size: 2.5vh;
+    margin-bottom: 5px;
+    transition-duration: 0.2s;
+}
+
+.o_rating{
+    
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.o_rating>div>img{
+    width: 11%;
+    aspect-ratio: 1;
+}
+
+.o_play{
+    position: relative;
+    grid-area: o_play;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.o_play>div{
+    aspect-ratio: 1;
+    width: 70%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.2s;
+    border-radius: 50%;
+}
+.o_play>div:hover{
+    scale: 1.15;
+    border-radius: 30%;
+}
+.o_play>div:focus{
+    scale: 1.15;
+    border-radius: 30%;
+}
+
+.o_play>div>div{
+    aspect-ratio: 1;
+    height: 100%;
+    background-image: linear-gradient(45deg, var(--o_c1), var(--o_c2));
+    border-radius: inherit;
+    position: absolute;
+}
+
+.o_play>div>img{
+    position: relative;
+    left: 3%;
+    width: 60%;
+    height: 60%;
+    z-index: 1000;
+}
+
+@media screen and (max-aspect-ratio: 10/12) {
+    #contList h2{
+        font-size: 3vw;
+        font-weight: 500;
+        margin: 0;
+        padding: 0;
+    }
+    #contList > div{
+        overflow-y: scroll;
+    }
+    #contList>div>button{
+        width: 23%;
+        height: 90%;
+        transition-duration: 0.2s;
+        min-width: 15vh;
+        max-height: 30vw;
+        min-height: 10vw;
+    }
+}
+
+@media screen and (min-aspect-ratio: 23/46) {
+    #contList>div>button{
+        filter: grayscale(1) brightness(0.5);
+    }
+    #contList>div>button:hover{
+        filter:grayscale(0) brightness(1.2);
+    }
+    #contList>div>button:focus{
+        filter:grayscale(0) brightness(1.2);
+    }
+}
+
+@media screen and (max-aspect-ratio: 23/46) {
+    #contList>div>button{
+        width: 40%;
+        transition-duration: 0.2s;
+        min-width: 15vh;
+        max-height: 50vw;
+        min-height: 10vw;
+    }
+
+    #contSlide{
+        display: none;
+    }
+
+    main{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 70px 1fr 1fr;
+        grid-template-areas: "ui ui" "intro intro" "list list";
+    }
+
+}

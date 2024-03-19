@@ -2,11 +2,14 @@
 
 :root{
     --bg: #1a1b1f;
+    --lbg: #2a2a2f;
     --o_light: #ffffff15;
     --o_dark: #000000a0;
     --o_text: #f0f0f0;
     --o_c1: #ff5252;
     --o_c2: #ff9260;
+    --o_bgc1: #ff525260;
+    --o_bgc2: #ff7b3e60;
     --o_star: #ff9900;
 }
 
@@ -16,6 +19,23 @@ body{
     color: var(--o_text);
     overflow-x: hidden;
     background-color: var(--bg);
+}
+
+.bgBlob{
+    position: absolute;
+    height: 100svh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+#redBlob{
+    background-image: radial-gradient(ellipse at 120% 10%, var(--o_bgc2), var(--bg)50%);
+    z-index: -2;
+}
+
+#orangeBlob{
+    background-image: radial-gradient(ellipse at 10% 100%, var(--o_bgc1), transparent 50%);
+    z-index: -1;
 }
 
 main{
@@ -75,19 +95,19 @@ main{
     }
 
 #one{
-background-color: #6baff3;
+background-color: #303030;
 }
 #two{
-background-color: #E6F09C;
+background-color: #404040;
 }
 #three{
-background-color: #EFA19B;
+background-color: #505050;
 }
 #four{
-background-color: #495C70;
+background-color: #606060;
 }
 #five{
-background-color: #6baff3;
+background-color: #303030;
 }
 
 #dotcontainer{

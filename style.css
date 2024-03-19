@@ -72,22 +72,32 @@ main{
     height: 500px;
     width: 700px;
     right: 700px;
+    background-size: cover;
+    background-position-x: center;
     }
 
+
 #one{
-background-color: #6baff3;
+    /* background-color: #6baff3; */
+background-image: url(img/AcrossSV2.webp);
 }
 #two{
-background-color: #E6F09C;
+background-image: url(img/AvatarWow2.webp);
 }
 #three{
-background-color: #EFA19B;
+background-image: url(img/Dune2.webp);
 }
 #four{
-background-color: #495C70;
+background-image: url(img/theBatboy.webp);
 }
 #five{
-background-color: #6baff3;
+background-image: url(img/AcrossSV2.webp);
+}
+
+#info{
+text-align: center;
+display: flex;
+justify-content: center;
 }
 
 #dotcontainer{

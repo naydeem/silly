@@ -71,14 +71,28 @@ slideIndex=0;
     left();
     button();
   if (slideIndex>=5){
-    slideIndex=0;
+    slideIndex=0;x
   }
 
 }
 
 setInterval(left2,4000);
 
-
+$('#two').click(function(){
+    window.open('https://www.imdb.com/title/tt1630029/')
+});
+$('#four').click(function(){
+    window.open('https://www.imdb.com/title/tt1877830/')
+});
+$('#three').click(function(){
+    window.open('https://www.imdb.com/title/tt1160419/')
+});
+$('#one').click(function(){
+    window.open('https://www.imdb.com/title/tt9362722/')
+});
+$('#five').click(function(){
+    window.open('https://www.imdb.com/title/tt9362722/')
+});
 
 
 //hawa

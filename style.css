@@ -408,32 +408,32 @@ cursor:pointer;
 }
 
 #o_movie1{
-    background-image: url(img/avatarWoW.jpg);
+    background-image: url(img/avatarWoW_card.webp);
     background-size: cover;
     background-position-x: center;
 }
 
 #o_movie2{
-    background-image: url(img/theBatman.avif);
+    background-image: url(img/theBatman_card.webp);
     background-size: cover;
     background-position-x: center;
     
 }
 
 #o_movie3{
-    background-image: url(img/duneune.jpg);
+    background-image: url(img/duneune_card.webp);
     background-size: cover;
     background-position-x: center;
 }
 
 #o_movie4{
-    background-image: url(img/intoSV.jpg);
+    background-image: url(img/intoSV_card.webp);
     background-size: cover;
     background-position-x: center;
 }
 
 #o_movie5{
-    background-image: url(img/acrossSV.jpg);
+    background-image: url(img/acrossSV_card.webp);
     background-size: cover;
     background-position: center;
 }

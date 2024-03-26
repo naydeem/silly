@@ -79,19 +79,20 @@ main{
 
 #one{
     /* background-color: #6baff3; */
-background-image: url(img/AcrossSV2.webp);
+background-image: url(img/spooderman.webp);
+background-position: center;
 }
 #two{
-background-image: url(img/AvatarWow2.webp);
+background-image: url(img/nedladdning.webp);
 }
 #three{
-background-image: url(img/Dune2.webp);
+background-image: url(img/Doone.webp);
 }
 #four{
-background-image: url(img/theBatboy.webp);
+background-image: url(img/ImMan.webp);
 }
 #five{
-background-image: url(img/AcrossSV2.webp);
+background-image: url(img/spooderman.webp);
 }
 
 #info{

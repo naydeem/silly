@@ -409,32 +409,32 @@ cursor:pointer;
 }
 
 #o_movie1{
-    background-image: url(img/avatarWoW_card.webp);
+    background-image: url(img/blue_pliye_card.webp);
     background-size: cover;
     background-position-x: center;
 }
 
 #o_movie2{
-    background-image: url(img/theBatman_card.webp);
+    background-image: url(img/harrhe3_card.webp);
     background-size: cover;
     background-position-x: center;
     
 }
 
 #o_movie3{
-    background-image: url(img/duneune_card.webp);
+    background-image: url(img/pime_hime.webp);
     background-size: cover;
     background-position-x: center;
 }
 
 #o_movie4{
-    background-image: url(img/intoSV_card.webp);
+    background-image: url(img/holding_hands-card.webp);
     background-size: cover;
     background-position-x: center;
 }
 
 #o_movie5{
-    background-image: url(img/acrossSV_card.webp);
+    background-image: url(img/swan_card.webp);
     background-size: cover;
     background-position: center;
 }
